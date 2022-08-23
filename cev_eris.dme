@@ -3142,6 +3142,8 @@
 #include "zzzz_modular_occulus\code\modules\reagents\reagents\stims.dm"
 #include "zzzz_modular_occulus\code\modules\reagents\reagents\toxins.dm"
 #include "zzzz_modular_occulus\code\modules\research\designs.dm"
+#include "zzzz_modular_occulus\code\modules\research\handresearch\handevice.dm"
+#include "zzzz_modular_occulus\code\modules\research\handresearch\handprojects.dm"
 #include "zzzz_modular_occulus\code\modules\research\nodes\biotech.dm"
 #include "zzzz_modular_occulus\code\modules\research\nodes\bluespace.dm"
 #include "zzzz_modular_occulus\code\modules\research\nodes\combat.dm"
