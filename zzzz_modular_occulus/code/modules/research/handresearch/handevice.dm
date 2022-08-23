@@ -1,3 +1,4 @@
+#define FILTERS list ("Biology","Mechanical")
 
 
 /obj/item/device/hand_tool
@@ -13,6 +14,25 @@
 	throw_range = 10
 	matter = list(MATERIAL_STEEL = 5)
 	origin_tech = list(TECH_ENGINEERING = 1, TECH_BIO = 1)
-	spawn_tags = SPAWN_TAG_DIVICE_SCIENCE
-	spawn_frequency = 5
-	rarity_value = 8
+
+
+/obj/item/device/hand_tool/proc/select_bio(mob/user)
+	to_chat(user, SPAN_NOTICE("bio."))
+	return
+
+/obj/item/device/hand_tool/proc/select_eng(mob/user)
+	to_chat(user, SPAN_NOTICE("eng."))
+	return
+
+/obj/item/device/hand_tool/attack_self(mob/user)
+	var/choice = input(usr, "Select what research field you want your projects to be filtered by", "Filter selection", null) in FILTERS
+	switch(choice)
+		if("Biology")
+			select_bio(user)
+			return
+		if("Mechanical")
+			select_eng(user)
+			return
+		else
+			to_chat(user, SPAN_NOTICE("[src]\'s data buffer is empty."))
+			return
