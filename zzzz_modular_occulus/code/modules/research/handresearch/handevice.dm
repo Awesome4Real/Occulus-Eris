@@ -1,5 +1,5 @@
 #define FILTERS list ("Biology","Mechanical")
-
+#define PROJECTS list ("tool","egg")
 
 /obj/item/device/hand_tool
 	name = "HAND Unit"
@@ -25,7 +25,7 @@
 	return
 
 /obj/item/device/hand_tool/attack_self(mob/user)
-	var/choice = input(usr, "Select what research field you want your projects to be filtered by", "Filter selection", null) in FILTERS
+	var/choice = input(usr, "Select what field of research you want to start a project in", "Filter selection", null) in FILTERS
 	switch(choice)
 		if("Biology")
 			select_bio(user)
