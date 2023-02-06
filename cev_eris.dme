@@ -2908,6 +2908,7 @@
 #include "zzzz_modular_occulus\code\game\objects\items\oddities.dm"
 #include "zzzz_modular_occulus\code\game\objects\items\pizzabomb.dm"
 #include "zzzz_modular_occulus\code\game\objects\items\plush.dm"
+#include "zzzz_modular_occulus\code\game\objects\items\psyamp.dm"
 #include "zzzz_modular_occulus\code\game\objects\items\silkcraft.dm"
 #include "zzzz_modular_occulus\code\game\objects\items\translators.dm"
 #include "zzzz_modular_occulus\code\game\objects\items\trash.dm"
