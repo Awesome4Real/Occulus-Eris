@@ -2852,6 +2852,7 @@
 #include "zzzz_modular_occulus\code\datums\perks\oddity.dm"
 #include "zzzz_modular_occulus\code\datums\setup_option\core_implants.dm"
 #include "zzzz_modular_occulus\code\datums\setup_option\backgrounds\origin.dm"
+#include "zzzz_modular_occulus\code\datums\underwear\undershirt.dm"
 #include "zzzz_modular_occulus\code\datums\uplink\devices and tools.dm"
 #include "zzzz_modular_occulus\code\datums\uplink\highly visible and dangerous weapons.dm"
 #include "zzzz_modular_occulus\code\datums\uplink\implants.dm"
