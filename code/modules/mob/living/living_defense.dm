@@ -72,11 +72,7 @@
 			adjustHalLoss(agony_gamage)
 
 		//Actual part of the damage that passed through armor
-		var/actual_damage
-		if(damagetype == HALLOSS )
-			actual_damage = round ( ( effective_damage * ( 100 - ( armor_effectiveness * 2 ) ) ) / 100 )
-		else
-			actual_damage = round ( ( effective_damage * ( 100 - armor_effectiveness ) ) / 100 )
+		var/actual_damage = round ( ( effective_damage * ( 100 - armor_effectiveness ) ) / 100 )
 		apply_damage(actual_damage, damagetype, def_zone, sharp, edge, used_weapon)
 		if(ishuman(src) && def_zone && actual_damage >= 20)
 			var/mob/living/carbon/human/H = src
